@@ -9,4 +9,5 @@ resource "azurerm_log_analytics_workspace" "loganalytics_sandbox" {
   resource_group_name = azurerm_resource_group.loganalytics_rg.name
   sku                 = "PerGB2018"
   retention_in_days   = 30
+  daily_quota_gb      = 0.1
 }
